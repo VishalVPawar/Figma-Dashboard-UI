@@ -1,0 +1,165 @@
+<div class="position-absolute sidebarMaindiv">
+  <div class="d-flex investBank">
+   <div> <img src="../../../../assets/images/Symbol.png" class="investBanklogo" /></div>
+    <div class="investBankspan"> InvestBank </div>
+  </div>
+  <div>
+    <div class="menuItemmainDiv">
+      <div class="menuItemmain">
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          routerLink="../dashboard"
+        >
+          <div class="menuItemDiv">
+            <img
+              src="../../../../assets/images/Dashboard Icon.png"
+              class="menuItemlogo dashboardLogo"
+            />
+            <span id="menuItemspan"> Dashboard </span>
+          </div></a
+        >
+      </div>
+
+      <div class="menuItemmain">
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          routerLink="../analytics"
+        >
+          <div class="menuItemDiv">
+            <img
+              src="../../../../assets/images/Analitycs.png"
+              class="menuItemlogo"
+            />
+            <span id="menuItemspan"> Analitycs </span>
+          </div></a
+        >
+      </div>
+      <div class="menuItemmain">
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          routerLink="../payments"
+        >
+          <div class="menuItemDiv">
+            <img
+              src="../../../../assets/images/fluent_payment-32-regular.png"
+              class="menuItemlogo"
+            /><span id="menuItemspan"> Payments </span>
+          </div>
+        </a>
+      </div>
+      <div class="menuItemmain">
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          routerLink="../deposit"
+        >
+          <div class="menuItemDiv">
+            <img
+              src="../../../../assets/images/carbon_percentage.png"
+              alt="menuItem"
+              class="menuItemlogo"
+            />
+            <span id="menuItemspan"> Deposit </span>
+          </div></a
+        >
+      </div>
+      <div class="menuItemmain">
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          routerLink="../moneybox"
+        >
+          <div class="menuItemDiv">
+            <img
+              src="../../../../assets/images/ph_piggy-bank.png"
+              class="menuItemlogo"
+            /><span id="menuItemspan"> Moneybox </span>
+          </div></a
+        >
+      </div>
+      <div class="menuItemmain">
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          routerLink="../securities"
+        >
+          <div class="menuItemDiv">
+            <img
+              src="../../../../assets/images/arcticons_eufy-security.png"
+              class="menuItemlogo"
+            /><span id="menuItemspan"> Securities </span>
+          </div></a
+        >
+      </div>
+      <hr style="margin-top: 16px; margin-bottom: 16px; margin-left: 25px" />
+      <div class="menuItemmain">
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          routerLink="../help"
+        >
+          <div class="menuItemDiv">
+            <img
+              src="../../../../assets/images/material-symbols_help-outline.png"
+              class="menuItemlogo"
+            /><span id="menuItemspan"> Help </span>
+          </div></a
+        >
+      </div>
+      <div class="menuItemmain">
+        <a
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-link"
+          routerLink="../setting"
+        >
+          <div class="menuItemDiv">
+            <img
+              src="../../../../assets/images/setting2.png"
+              class="menuItemlogo"
+            /><span id="menuItemspan"> Settings </span>
+          </div></a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="d-flex lastsidebarmaindiv">
+    <div class="d-flex lastsidebardiv">
+      <div class="sidebarimgdiv">
+        <a routerLink="../profile">
+          <img
+            src="../../../../assets/images/Ellipse 2.png"
+            height="48px"
+            width="48px"
+        /></a>
+      </div>
+      <a routerLink="../profile">
+        <div class="emaildiv" style="text-decoration: none">
+          <span style="color: white;">
+            {{firstname}} {{lastname}}
+
+            <img
+              src="../../../../assets/images/Vector.png"
+              alt="#"
+              style="margin-left: 10px"
+            />
+          </span>
+        </div>
+        <p style="color: #747475; margin-bottom: 40px;margin-top: 20px;">
+          {{email}}
+        </p>
+       </a
+      >
+    </div>
+  </div>
+</div>

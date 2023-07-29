@@ -1,0 +1,83 @@
+.sidebarMaindiv {
+  background-color: #151718;
+  width: 15%;
+}
+.investBank {
+  border: 1px solid #303031;
+}
+.investBanklogo {
+  margin-left: 31px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  height: 32px;
+  width: 32px;
+}
+.investBankspan {
+  padding-top: 6px;
+  // margin-left: 8px;
+  // margin-top: 28px;
+  // margin-bottom: 28px;
+  margin: 28px 8px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+}
+.menuItemmainDiv {
+  margin-top: 28px;
+  color: #747475;
+  font-weight: 500;
+  font-size: 16px;
+}
+.menuItemDiv {
+  margin-top: 14px;
+  margin-bottom: 13px;
+}
+.menuItemmain{
+  border: 1px solid #151718;
+}
+#menuItemspan {
+  margin-left: 12px;
+}
+
+.menuItemlogo {
+  width: 24px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 31px;
+}
+
+.dashboardLogo {
+  filter: brightness(50%);
+}
+
+.active {
+  border-left: 3px solid white;
+  color: white;
+}
+
+.active .menuItemlogo {
+  filter: brightness(200%);
+}
+
+.lastsidebarmaindiv {
+  display: flex;
+  margin-top: 250px;
+  bottom: 0;
+  align-items: center;
+}
+
+.lastsidebardiv {
+  margin-left: 20px;
+  margin-top: 40px;
+  align-items: baseline;
+}
+.emaildiv {
+  margin-left: 60px;
+  margin-top: 10px;
+  margin-bottom: 0%;
+}
+.sidebarimgdiv {
+  position: absolute;
+}

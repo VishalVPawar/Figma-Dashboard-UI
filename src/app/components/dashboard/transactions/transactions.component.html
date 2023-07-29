@@ -1,0 +1,39 @@
+<div class="mainDivsInnerMar">
+  <div class="d-flex" style="margin-bottom: 4px">
+    <div>
+      <b style="margin-right: 8px"> Transactions </b>
+      <span>|</span>
+      <span style="margin-left: 8px" (click)="toggleCountryPopup($event)">
+        <img src="../../../../assets/images/MicrosoftTeams-image.png" height="25px" width="25px">
+      </span>
+    </div>
+    <div style="text-decoration: underline #848484; margin-left: 158px">
+      <span>View all</span>
+    </div>
+  </div>
+  <div class="transactionmapdiv" *ngFor="let transaction of transactions">
+    <div class="d-flex justify-content-between align-items-center" *ngIf="isSelectedCountry(transaction.country)">
+      <div><img [src]="transaction.logo" /></div>
+      <div>
+        <p>{{ transaction.name }}</p>
+        <span>{{ transaction.date }}</span>
+      </div>
+      <div style="font-weight: 500;">{{ transaction.country }}</div>
+      <div [style.color]="transaction.color">
+        {{ transaction.amount }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="country-popup rounded-2" *ngIf="showCountryPopup" [style.top.px]="popupTopPosition" [style.left.px]="popupLeftPosition">
+  <div class="popup-content">
+    <div *ngFor="let country of countries">
+      <label>
+        <input type="checkbox" [(ngModel)]="country.selected" />
+        {{ country.name }}
+      </label>
+    </div>
+    <button type="button" class="btn btn-danger" (click)="onSubmit()">Close</button>
+  </div>
+</div>

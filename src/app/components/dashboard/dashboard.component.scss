@@ -1,0 +1,70 @@
+/* 1096*779 main div as per design ,  */
+.maindivdashboard {
+  position: absolute;
+  background-color: #f9f9f9;
+  padding-right: 37px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.hellomaindiv {
+  margin-top: 124px;
+  margin-left: 280px;
+}
+.h2Anna {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+}
+.pannadashboard {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 8px 0 0 0;
+}
+.paybtndiv {
+  margin-left: 580px;
+}
+.bodymainDivdash {
+  margin-top: 36px;
+  margin-left: 280px;
+}
+.firstDivvalues {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.first1Div p {
+  font-style: normal;
+  font-size: 12px;
+  color: #848484;
+}
+.mainDivsInnerMar {
+  margin: 18px 20px;
+}
+
+.first11Div {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+.first2Div {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+}
+
+.custom-select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

@@ -1,0 +1,7 @@
+export interface Transaction {
+  logo: string;
+  name: string;
+  date: string;
+  amount: number;
+  color: string;
+}

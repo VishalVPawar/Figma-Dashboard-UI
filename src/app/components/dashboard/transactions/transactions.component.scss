@@ -1,0 +1,88 @@
+.mainDivsInnerMar {
+  margin: 18px;
+}
+
+.transactionmapdiv {
+  border-bottom: 1px solid #eaeaea;
+}
+
+span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #848484;
+}
+
+p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+}
+
+.transactionmapdiv img {
+  width: 44px;
+  height: 44px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+b {
+  font-size: 18px;
+}
+
+.popover-form {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popover-form h3 {
+  margin-top: 0;
+}
+
+.popover-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.popover-form button {
+  margin-top: 10px;
+}
+
+.filter-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.country-popup {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.show-popup {
+  display: block;
+}
+
+.country-list {
+  margin-top: 10px;
+}
+
+.country-list label {
+  display: block;
+}
+
+.country-list button {
+  margin-top: 10px;
+}
+
+

@@ -1,0 +1,65 @@
+<div class="maindivdashboard">
+  <div class="d-flex hellomaindiv">
+    <div class="m-0">
+      <p class="m-0 h2Anna">Hello, {{ firstname }}!</p>
+      <p class="pannadashboard">Send and receive funds with pleasure.</p>
+    </div>
+    <div class="paybtndiv">
+      <select class="custom-select" style="margin-left: 50px;" [(ngModel)]="selectedOption" (change)="onOptionChange()">
+        <option *ngFor="let option of options" [value]="option.value">{{ option.label }}</option>
+      </select>
+      <img src="../../../assets/images/solar_menu-dots-bold.png" height="24px" width="24px" style="margin-left: 16px" />
+    </div>
+  </div>
+  <div class="d-flex bodymainDivdash">
+    <div id="bodyfirstDivdash">
+      <div class="d-flex first1Div">
+        <div class="first11Div">
+          <div class="mainDivsInnerMar">
+            <p class="m-0">Total income</p>
+            <span class="firstDivvalues">{{ income }}</span>
+            <p class="m-0">
+              from last week
+              <span style="color: #3dd26a; margin-left: 9px">&#8599; 7.85%</span>
+            </p>
+          </div>
+        </div>
+        <div class="first11Div" style="margin-left: 14px">
+          <div class="mainDivsInnerMar">
+            <p class="m-0">Total Expense</p>
+            <span class="firstDivvalues">{{ expense }}</span>
+            <p class="m-0">
+              from last week
+              <span style="color: #ff0000; margin-left: 9px">&#8601; 22.30%</span>
+            </p>
+          </div>
+        </div>
+        <div class="first11Div" style="margin-left: 14px">
+          <div class="mainDivsInnerMar">
+            <p class="m-0">Total Savings</p>
+            <span class="firstDivvalues">{{ saving }}</span>
+            <p class="m-0">
+              from last week
+              <span style="color: #3dd26a; margin-left: 9px">&#8599; 9.50%</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="first2Div" style="margin-top: 14px">
+        <app-wallet></app-wallet>
+      </div>
+
+      <div class="first2Div" style="margin-top: 14px">
+        <app-piechart></app-piechart>
+      </div>
+    </div>
+    <div class="bodysecondDivdash">
+      <div class="first2Div" style="margin-left: 14px">
+        <app-transactions></app-transactions>
+      </div>
+      <div class="first2Div" style="margin-top: 14px; margin-left: 14px; margin-bottom: 36px;">
+        <app-qtransfer></app-qtransfer>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+<div class="mainDivsInnerMar">
+  <div>
+    <div class="d-flex">
+      <div style="font-size: 18px; font-weight: 700; color: #303031">
+        Statistics
+      </div>
+
+      <div style="margin-left: 226px;padding: 8px 5px; border-radius: 4px; background: #F4F4F4;">
+        <span
+          (click)="setActiveDuration('1D')"
+          [class.active]="activeDuration === '1D'"
+          [style.background-color]="activeDuration === '1D' ? 'white' : ''"
+          style="border-radius: 4px; padding: 4px 12px ;cursor: pointer;"
+          >1D</span
+        >
+        <span
+          (click)="setActiveDuration('1W')"
+          [class.active]="activeDuration === '1W'"
+          [style.background-color]="activeDuration === '1W' ? 'white' : ''"
+          style="border-radius: 4px; padding: 4px 12px ;cursor: pointer;"
+          >1W</span
+        >
+        <span
+          (click)="setActiveDuration('1M')"
+          [class.active]="activeDuration === '1M'"
+          [style.background-color]="activeDuration === '1M' ? 'white' : ''"
+          style="border-radius: 4px; padding: 4px 12px ;cursor: pointer;"
+          >1M</span
+        >
+        <span
+          (click)="setActiveDuration('6M')"
+          [class.active]="activeDuration === '6M'"
+          [style.background-color]="activeDuration === '6M' ? 'white' : ''"
+          style="border-radius: 4px; padding: 4px 12px ;cursor: pointer;"
+          >6M</span
+        >
+        <span
+          (click)="setActiveDuration('1Y')"
+          [class.active]="activeDuration === '1Y'"
+          [style.background-color]="activeDuration === '1Y' ? 'white' : ''"
+          style="border-radius: 4px; padding: 4px 12px ;cursor: pointer;"
+          >1Y</span
+        >
+      </div>
+      
+    </div>
+    <div>
+      <div class="d-flex justify-content-between" style="margin: 4px 0">
+        <div
+          style="margin: 4px 12px; cursor: pointer"
+          *ngIf="activeDuration === '1D'"
+        >
+          <div style="margin-top: 24px; margin-bottom: 24px">
+            <canvas #chartCanvas style="width: 520px; height: 207px"></canvas>
+          </div>
+        </div>
+
+        <div
+          style="margin: 4px 12px; cursor: pointer"
+          *ngIf="activeDuration === '1W'"
+        >
+          <div style="margin-top: 24px; margin-bottom: 24px">
+            <canvas #chartCanvas style="width: 520px; height: 207px"></canvas>
+          </div>
+        </div>
+
+        <div
+          style="margin: 4px 12px; cursor: pointer"
+          *ngIf="activeDuration === '1M'"
+        >
+          <div style="margin-top: 24px; margin-bottom: 24px">
+            <canvas #chartCanvas style="width: 520px; height: 207px"></canvas>
+          </div>
+        </div>
+
+        <div
+          style="margin: 4px 12px; cursor: pointer"
+          *ngIf="activeDuration === '6M'"
+        >
+          <div style="margin-top: 24px; margin-bottom: 24px">
+            <canvas #chartCanvas style="width: 520px; height: 207px"></canvas>
+          </div>
+        </div>
+
+        <div
+          style="margin: 4px 12px; cursor: pointer"
+          *ngIf="activeDuration === '1Y'"
+        >
+          <div style="margin-top: 24px; margin-bottom: 24px">
+            <canvas #chartCanvas style="width: 520px; height: 207px"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="d-flex" style="font-size: 12px; margin-left: 185px">
+      <div>
+        <img
+          src="../../../assets/images/Ellipse 9.png"
+          style="margin-right: 4px"
+        />Money Income
+      </div>
+      <div style="margin-left: 12px">
+        <img
+          src="../../../assets/images/Ellipse 9 (1).png"
+          style="margin-right: 4px"
+        />Current State
+      </div>
+    </div>
+  </div>
+</div>

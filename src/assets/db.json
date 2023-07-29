@@ -1,0 +1,174 @@
+{
+  "dashcurrency": {
+    "data": [
+      {
+        "income": "$974,99",
+        "expense": "$425,30",
+        "saving": "$549,61",
+        "country": "USA",
+        "currency": "US Doller",
+        "balance": "$14,528,00"
+      },
+      {
+        "income": "₹97,499",
+        "expense": "₹42,530",
+        "saving": "₹54,961",
+        "country": "India",
+        "currency": "Indian Rupees",
+        "balance": "₹14,52,800"
+      }
+    ]
+  },
+  "transactions": [
+    {
+      "logo": "../../../assets/images/Picture.png",
+      "name": "Netflix",
+      "date": "Apr 05, 2023 at 21:46",
+      "country": "India",
+      "amount": "₹-15.49",
+      "color": "#d70000"
+    },
+    {
+      "logo": "../../../assets/images/Picture (1).png",
+      "name": "Spotify",
+      "date": "Mar 14, 2023 at 08:10",
+      "country": "India",
+      "amount": "₹135.49",
+      "color": "#00b046"
+    },
+    {
+      "logo": "../../../assets/images/Picture (2).png",
+      "name": "Figma",
+      "date": "Feb 20, 2023 at 19:24",
+      "country": "Canada",
+      "amount": "$-75.0",
+      "color": "#d70000"
+    },
+    {
+      "logo": "../../../assets/images/Picture (3).png",
+      "name": "Shopify",
+      "date": "Jan 07, 2023 at 06:58",
+      "country": "Russia",
+      "amount": "$934.29",
+      "color": "#00b046"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Anna",
+      "lastname": "Karin",
+      "email": "annakarin@gmail.com"
+    }
+  ],
+  "datasets": [
+    {
+      "oneday": {
+        "data": [7000, 12000],
+        "label": "series 1",
+        "backgroundColor": "#303031",
+        "tension": 0.5,
+        "borderColor": "#5F1ED9",
+        "pointRadius": 4,
+        "labels": ["9/04", "10/04"]
+      }
+    },
+    {
+      "oneweek": {
+        "data": [0, 7000, 20000, 11000, 33200, 12000, 10000],
+        "label": "series 1",
+        "backgroundColor": "#303031",
+        "tension": 0.5,
+        "borderColor": "#5F1ED9",
+        "pointRadius": 4,
+        "labels": ["8/04", "9/04", "10/04", "11/04", "12/04", "13/04", "14/04"]
+      }
+    },
+    {
+      "onemonth": {
+        "data": [0, 7000, 20000, 11000, 33200],
+        "label": "series 1",
+        "backgroundColor": "#303031",
+        "tension": 0.5,
+        "borderColor": "#5F1ED9",
+        "pointRadius": 4,
+        "labels": ["1/04", "8/04", "15/04", "22/04", "29/04"]
+      }
+    },
+    {
+      "sixmonths": {
+        "data": [7000, 10000, 20000, 11000, 18000, 25000],
+        "label": "series 1",
+        "backgroundColor": "#303031",
+        "tension": 0.5,
+        "borderColor": "#5F1ED9",
+        "pointRadius": 4,
+        "labels": [
+          "8/01/2020",
+          "8/07/2020",
+          "8/01/2021",
+          "8/07/2021",
+          "8/01/2022",
+          "8/07/2022"
+        ]
+      }
+    },
+    {
+      "oneyear": {
+        "data": [0, 7000, 20000, 11000, 33200, 12000, 30000],
+        "label": "series 1",
+        "backgroundColor": "#303031",
+        "tension": 0.5,
+        "borderColor": "#5F1ED9",
+        "pointRadius": 4,
+        "labels": [
+          "04/2017",
+          "04/2018",
+          "04/2019",
+          "04/2020",
+          "04/2021",
+          "04/2022"
+        ]
+      }
+    }
+  ],
+  "data": [
+    {
+      "id":"1000",
+      "image": "../../../assets/images/Picture.png",
+      "name": "Netflix",
+      "date": "2023-04-05",
+      "country": "India",
+      "price": "-15.49"
+    },
+    { "id":"1001",
+      "image": "../../../assets/images/Picture (1).png",
+      "name": "Spotify",
+      "date": "2023-03-14",
+      "country": "India",
+      "price": "135.49"
+    },
+    { "id":"1002",
+      "image": "../../../assets/images/Picture (2).png",
+      "name": "Figma",
+      "date": "2023-02-20",
+      "country": "Canada",
+      "price": "-75.0"
+    },
+    { "id":"1003",
+      "image": "../../../assets/images/Picture (3).png",
+      "name": "Shopify",
+      "date": "2023-01-07",
+      "country": "Russia",
+      "price": "934.29"
+    }
+  ],
+  "dates":[
+    {
+      "date1": "2023-04-05T21:46:00.000Z",
+      "date2": "2023-03-14T08:10:00.000Z",
+      "date3": "2023-02-20T19:24:00.000Z",
+      "date4": "2023-01-07T06:58:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+<div class="mainDivAnalytics border">
+  <div>
+    <p-table [value]="analytics2" dataKey="id" editMode="row">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Logo</th>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Country</th>
+          <th>Price($)</th>
+          <th style="width: 8rem">Actions</th>
+        </tr>
+      </ng-template>
+      <ng-template
+        pTemplate="body"
+        let-analytics
+        let-editing="editing"
+        let-ri="rowIndex"
+      >
+        <tr [pEditableRow]="analytics">
+          <td>
+            <img src="{{ analytics.image }}" width="40px" height="40px" />
+          </td>
+          <td style="width: 160px; height: 90px">
+            <p-cellEditor>
+              <ng-template pTemplate="input">
+                <p-dropdown
+                  [options]="analyticsNames"
+                  [(ngModel)]="analytics.name"
+                ></p-dropdown>
+              </ng-template>
+              <ng-template pTemplate="output">
+                {{ analytics.name }}
+              </ng-template>
+            </p-cellEditor>
+          </td>
+          <td style="width: 200px">
+            <p-cellEditor>
+              <ng-template pTemplate="input">
+                <input pInputText type="date" [(ngModel)]="analytics.date" />
+              </ng-template>
+              <ng-template pTemplate="output">
+                {{ analytics.date }}
+              </ng-template>
+            </p-cellEditor>
+          </td>
+
+          <td style="width: 160px">
+            <p-cellEditor>
+              <ng-template pTemplate="input">
+                <p-dropdown
+                  [options]="statuses"
+                  [(ngModel)]="analytics.country"
+                  [style]="{ width: '100%' }"
+                ></p-dropdown>
+              </ng-template>
+
+              <ng-template pTemplate="output">
+                {{ analytics.country }}
+              </ng-template>
+            </p-cellEditor>
+          </td>
+          <!-- <td  style="width: 240px;">
+            <p-cellEditor>
+              <ng-template pTemplate="input">
+                <span></span>
+                <input pInputText type="text" [(ngModel)]="analytics.price" />
+              </ng-template>
+              <ng-template pTemplate="output">
+                {{ analytics.price }}
+              </ng-template>
+            </p-cellEditor>
+          </td> -->
+          <td>
+            <p-cellEditor>
+              <ng-template pTemplate="input">
+                <span
+                  [ngClass]="{
+                    'amount-red': analytics.price < 0,
+
+                    'amount-green': analytics.price >= 0
+                  }"
+                >
+                  <input pInputText type="text" [(ngModel)]="analytics.price" />
+                </span>
+              </ng-template>
+
+              <ng-template pTemplate="output">
+                <span
+                  [ngClass]="{
+                    'amount-red': analytics.price < 0,
+
+                    'amount-green': analytics.price >= 0
+                  }"
+                >
+                  {{ analytics.price }}
+                </span>
+              </ng-template>
+            </p-cellEditor>
+          </td>
+          <td style="text-align: center">
+            <button
+              *ngIf="!editing"
+              pButton
+              pRipple
+              type="button"
+              pInitEditableRow
+              icon="pi pi-pencil"
+              (click)="onRowEditInit(analytics)"
+            >
+              <img
+                src="../../../assets/images/pencil.png"
+                height="30px"
+                width="30px"
+              />
+            </button>
+            <button
+              *ngIf="editing"
+              pButton
+              pRipple
+              type="button"
+              pSaveEditableRow
+              icon="pi pi-check"
+              class="p-button-rounded p-button-text p-button-success p-mr-2"
+              (click)="onRowEditSave(analytics)"
+            >
+              <img
+                src="../../../assets/images/MicrosoftTeams-image (1).png"
+                height="30px"
+                width="30px"
+                class=""
+              />
+            </button>
+            <button
+              *ngIf="editing"
+              pButton
+              pRipple
+              type="button"
+              pCancelEditableRow
+              icon="pi pi-times"
+              class="p-button-rounded p-button-text p-button-danger"
+              (click)="onRowEditCancel(analytics, ri)"
+            >
+              <img
+                src="../../../assets/images/MicrosoftTeams-image (2).png"
+                height="30px"
+                width="30px"
+              />
+            </button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>
+<p-toast></p-toast>
